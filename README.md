@@ -1,4 +1,4 @@
-# MTLSAName: MTLSA (A Multi-Task Learning Formulation for Survival Analysis)
+Name: MTLSA (A Multi-Task Learning Formulation for Survival Analysis)
 Version: 1.0
 
 Together with this Readme.txt are the files mexC.m, MTLSA.m, MTLSA_V2.m survival_data_pre.m, MTLSA.pdf and the folders functions and data.
