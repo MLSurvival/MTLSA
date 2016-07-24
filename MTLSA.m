@@ -133,9 +133,11 @@ end
 %calculating the weighted average of AUC
 haveAUC=find(AUC_matrix(1,:));
 weighted_AUC=(AUC_matrix(:,haveAUC)*contains(haveAUC,:))/sum(contains(haveAUC));
-X_disp = ['Best AUC is: ',num2str(max(weighted_AUC)),...
-    ' and Best Cindex is: ',num2str(max(cindex))];
+X_disp = ['Best possible weighted AUC is: ',num2str(max(weighted_AUC)),...
+    ' and the Best possible Cindex is: ',num2str(max(cindex))];
 disp(X_disp)
+disp(['Please check the "',name_test,Smallest_lambda_rate,'_result.mat" file to check all the results']) 
+disp('with respect to different lambdas and select the best lambda for your own dataset.')
 % draw figure
 h = figure;
 plot(log_lam, sparsity);
